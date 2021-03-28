@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- input type = radio 를 사용할 경우 name value 필수다. (name 똑같이)  -->
+<!-- radio 여러개중 하나 토글가능. -->
+<body>
+    <form action="#" method="GET">
+        <label for="subscribed">구독중</label>
+        <input type="radio" name="subscription" value="1" id="subscribed" />
+        <label for="unsubscribed">미구독</label>
+        <input type="radio" name="subscription" value="0" id="unsubscribed" />
+        <button type="submit">Submit</button>
+        <hr />
+        <label for="apple">사과</label>
+        <input type="radio" name="apple" value="1" id="apple" />
+        <label for="unapple">사과(x)</label>
+        <input type="radio" name="apple" value="0" id="unapple" />
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
