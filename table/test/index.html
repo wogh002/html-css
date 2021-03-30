@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<!-- 새로운 가로줄을 만들겠다 tr 태그 -->
+<!-- rowspan row 가 행이지만 세로줄을 합친다고 생각하자. (반대로)-->
+<!-- colspan col 세로지만 , 가로줄을 합친다고 생각하자 (반대로) -->
+<!-- table 의 scope ="rol | col" table 의 header 한테만 사용 할 수 있다(tr).-->
+<!-- 가로줄의 헤더인지 세로줄의 헤더인지 브라우저에게 좀 더 명확하게 의사전달을 하기 위해 사용한다. -->
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col">월</th>
+                <th scope="col">화</th>
+                <th scope="col">수</th>
+                <th scope="col">목</th>
+                <th scope="col">금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1교시</th>
+                <td rowspan="2">왕초보 HTML &amp; CSS</td>
+                <td>모각코</td>
+                <td rowspan="2">왕초보 HTML &amp; CSS</td>
+                <td>모각코</td>
+                <td rowspan="2">왕초보 HTML &amp; CSS</td>
+            </tr>
+            <tr>
+                <th scope="row">2교시</th>
+                <td rowspan="2">JavaScript스킬업</td>
+                <td rowspan="2">JavaScript스킬업</td>
+            </tr>
+            <tr>
+                <th scope="row">3교시</th>
+                <td>JavaScript 시작반</td>
+                <td>JavaScript 시작반</td>
+                <td>JavaScript 시작반</td>
+            </tr>
+            <tr>
+                <th colspan="6" scope="row">점심시간</th>
+            </tr>
+            <tr>
+                <th scope="row">4교시</th>
+                <td>SASS 기초반</td>
+                <td rowspan="2">HTML &amp; CSS <br>포트폴리오반</td>
+                <td rowspan="2">Open Seminar</td>
+                <td rowspan="2">HTML &amp; CSS <br>포트폴리오반</td>
+                <td>SASS 기초반</td>
+            </tr>
+            <tr>
+                <th scope="row">5교시</th>
+                <td>모각코</td>
+                <td>모각코</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="박재호">
+    <meta name="keywords" content="김버그,구름강의,구름">
+    <meta name="description" content="~~">
+    <!-- viewport 는 반응형 -->
+    <title>김버그의 버그없는 HTML 과 CSS </title>
+    <!-- HTML 의 목적은 사용자에게 전달할 문서의 콘텐츠를 잘 전달하는 역할이다. -->
+    <!-- 검색최적화에 매우 중요. (title)-->
+    <!-- https://spoqa~~ 붙혀넣기 -->
+    <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1>김버그</h1>
+    <p> 안녕하세요 김버그입니다.</p>
+    <script src="./app.js"></script>
+    <!-- 그런데 왜 body 태그 닫기전에 script 태그를 작성한건가요?
+        위에서부터 차례대로 브라우저는 렌더를 하기 시작한다 .
+        하지만 CSS 파일 같은경우는 다운받는동안 전부 받을 때 까지 대기하지않고  아래쪽으로 다운을 받으면서 랜더를 하기시작,
+      script태그는 다운을 전부 다 받을때 까지 무한대기 속도의 효율을 위해서 아래에 작성한 것. -->
+</body>
+
+</html>
