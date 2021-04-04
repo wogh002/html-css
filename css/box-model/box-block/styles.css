@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+.parent{
+    background-color: gray;
+}
+.child,
+.other{
+    height: 50px;
+    color:black;
+    line-height: 50px;
+    text-align: 20px;
+}
+.child{
+ 
+    background-color: #ffc82c;
+}
+.other{
+  
+    background-color: red;
+}
+
+
+
+
