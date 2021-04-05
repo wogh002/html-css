@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+.pseudo::before{
+    content: '★';
+}
+.pseudo::after{
+    content:'!';
+}
