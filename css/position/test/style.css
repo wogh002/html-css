@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+/* display :block 같은 경우 width 값을 지정 하지 않았을 경우
+ 부모 content box 100%*/
+.grandparents{
+    background-color: black;
+    width: 800px;
+    height: 600px;
+    position: relative;
+ }
+.parents{
+    width: 200px;
+    background-color: gray;
+    margin: 0 auto;
+}
+.child{
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+.red{
+    position: absolute;
+    background-color: red;
+    bottom:20px;
+}
+.yellow{
+    position: absolute;
+    background-color: yellow;
+    height: 21px;
+    width: 38px;
+    bottom:0;
+}
+.blue{
+    position: absolute;
+    bottom:0;
+    background-color: blue;
+    bottom:40px;
+}
