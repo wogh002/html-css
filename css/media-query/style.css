@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+  color: black;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  /* view height 1vh = 1% 차지 */
+}
+.box::after{
+  color: white;
+  content: 'Mobile';
+}
+.box strong{
+  visibility: hidden;
+}
+@media screen and (min-width:576px) {
+  /* 최소 가로길이 576px 이상일 경우 */
+  .box{
+    background-color: green;
+  }
+  .box::after{
+    content: 'Landscap Phone' ;
+  }
+}
+@media screen and (min-width:768px) {
+  .box{
+    background-color: yellow;
+  }
+  .box::after{
+    content: 'Tablet' ;
+  }
+}
+@media  screen and (min-width:768px) and (max-width:991px) {
+  .box strong{
+    visibility: visible;
+  }
+}
+@media screen and (min-width:992px) {
+  .box{
+    background-color: hotpink;
+  }
+  .box::after{
+    content: 'Desktop' ;
+  }
+}
+@media screen and (min-width:1200px) {
+  .box{
+    background-color: blue;
+  }
+  .box::after{
+    content: 'Large Desktop' ;
+  }
+}
+@media screen and (min-width:1366px) {
+  .box{
+    background-color: blueviolet;
+  }
+  .box::after{
+    content: 'Super large Desktop' ;
+  }
+}
+

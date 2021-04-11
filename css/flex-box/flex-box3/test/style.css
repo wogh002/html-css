@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html{
+  width: 160px;
+}
+body{
+  width: 100%;
+}
+.parent {
+  text-align: center;
+  color: white;
+  height: 500px;
+  background-color: gray;
+}
+.child{
+  text-align: center;
+  color: white;
+  background-color: black;
+}
