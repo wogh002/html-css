@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    font-size: 10px;
+    border-radius: 5px;
+    background-color: #0066ff;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin: 0 auto;
+    transition: font-size 1000ms ease-out,
+    background-color 2000ms ease-in 1000ms;
+}
+.box.active{
+    font-size: 30px;
+    background-color: #ff4949;
+}

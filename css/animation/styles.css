@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #0066ff;
+    color: #FFF;
+    text-align: center;
+    animation: move-box 1000ms ease-in-out infinite alternate;
+}
+
+@keyframes move-box {
+    from{
+        top: 0;
+    }
+    to{
+        top: 200px;
+        background-color: #ff4949;
+    }
+}
