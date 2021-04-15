@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+}
+/* Reset CSS */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+button,
+input,
+textarea{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    border: none;
+}
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active{
+    outline: none;
+    box-shadow: none;
+}
+ul,
+ol,
+li{
+    list-style-type: none;
+    padding-left: 0;
+}
+p{
+    font-size: 16;
+    line-height:1.5;
+    letter-spacing: -0.01em;
+    color: #2B292D;
+}
+.fill-button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    width: 140px;
+    height: 48px;
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: #FFF;
+    background-color: #3040C4;
+    transition: opacity 300ms ease-in-out;
+}
+.fill-button:hover{
+    opacity: 0.5;
+}
+.fill-button.inverted{
+    background-color: #FFF;
+    color: #3040C4;
+}
+
+/* Landing */
+.landing{
+    background-color: #FDDED8;
+    text-align: center;
+}
+.landing-content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.landing-title{
+    color: #2B292D;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    margin-bottom: 24px;
+}
+.landing-desc{
+    margin-bottom: 20px;
+}
+.landing .button-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing .button-group .fill-button:first-child{
+    margin-right: 8px;
+}
+/* >=768px (Desktop)*/
+@media screen and (min-width:768px){
+    p{
+        font-size: 22px;
+        line-height: 1.36363636;
+    }
+    .fill-button{
+        width: 160px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 1.555555555555556;
+    }
+    /* Landing */
+    .landing-content{
+        height: auto;
+        padding: 120px 0;
+    }
+    .landing-title{
+        font-size: 70px;
+        line-height: 1.028571428571429;
+        margin-bottom: 32px;
+    }
+    .landing-desc{
+        margin-bottom: 32px;
+    }
+    .landing .button-group .fill-button:first-child{
+        margin-right: 16px;
+    }
+}
+/* Custom Grid System - Fix container width */
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 960px !important;
+    }
+}

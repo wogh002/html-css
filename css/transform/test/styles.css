@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: #fff;
+}
+button{
+    display: block;
+    color: white;
+    width: 200px;
+    height: 200px;
+}
+.opacity{
+   background-color: #0066ff;
+   opacity: 0;
+}
+.visibility{
+    visibility: hidden;
+    background-color: red;
+}

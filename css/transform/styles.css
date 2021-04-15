@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #0066ff;
+    transform: rotate(45deg);
+    opacity: 0;
+}
+p{  
+    background-color: #ffcc;
+}
