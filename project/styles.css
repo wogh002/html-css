@@ -91,6 +91,78 @@ p{
 .landing .button-group .fill-button:first-child{
     margin-right: 8px;
 }
+/* Service */
+.service{
+    background-color: #F4F5F7;
+    padding: 80px 0;
+}
+.service .col-12:first-child{
+    margin-bottom: 38px;
+}
+.service-title{
+    font-size: 22px;
+    line-height: 1.363636363636364;
+    letter-spacing: -0.04em;
+    color: #2B292D;
+    margin-bottom: 16px;
+}
+/* Program */
+.program{
+    padding: 80px 0;
+}
+.program-group{
+    margin-bottom: 32px;
+}
+.program-group .program-title{
+    display: inline-block;
+    color: #009B4D;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+}
+.program-group .program-subtitle{
+    font-size: 34px;
+    line-height: 1.058823529411765;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+}
+.program-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    width: 290px;
+    height: 291px;
+    transition: all 250ms ease-in-out;
+}
+.program-card:hover{
+    background-color: #3141C5;
+    color: #FFF;
+}
+.program-card:not(:last-child){
+    margin-bottom: 20px;
+}
+.program-card-group .program-card img{
+    width: 142px;
+    height: 195px;
+    margin-bottom: 16px;
+}
+.program-card-group .program-card:nth-child(2) img{
+    width: 146px;
+}
+.program-card-group .program-card:nth-child(3) img{
+    width: 122px;
+}
+.program-card span{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.333333333333333;
+    letter-spacing: -0.02em;
+}
+
 /* >=768px (Desktop)*/
 @media screen and (min-width:768px){
     p{
@@ -118,6 +190,51 @@ p{
     }
     .landing .button-group .fill-button:first-child{
         margin-right: 16px;
+    }
+
+    /* Service */
+    .program{
+        padding: 80px 0 96px 0;
+    }
+    .service .col-12:first-child{
+        margin-bottom: auto;
+    }
+    .service-title{
+        font-size: 26px;
+        line-height: 1.307692307692308;
+    }
+    .service .col-12:first-child .service-desc{
+        width: 370px;
+    }
+    /* Program */
+    .program-group{
+        text-align: center;
+    }
+    .program-group .program-title{
+        font-size: 22px;
+        line-height: 1.090909090909091;
+        margin-bottom: 16px;
+    }
+    .program-group .program-subtitle{
+        font-size: 56px;
+        line-height: 1;
+        margin-bottom: 32px;
+    }
+    .program-group .program-desc{
+        margin-bottom: 72px;
+    }
+    .program-card-group{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+    .program-card-group .program-card img{
+        margin-bottom: 24px;
+    }
+    .program-card:not(:last-child){
+        margin-bottom: auto;
+        margin-right: 30px;
     }
 }
 /* Custom Grid System - Fix container width */
