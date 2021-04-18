@@ -60,7 +60,22 @@ p{
     background-color: #FFF;
     color: #3040C4;
 }
-
+.section{
+    padding: 80px 0;
+}
+.section-category{
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+}
+.section-title{
+    font-size: 34px;
+    line-height: 1.058823529411765;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+}
 /* Landing */
 .landing{
     background-color: #FDDED8;
@@ -107,60 +122,43 @@ p{
     margin-bottom: 16px;
 }
 /* Program */
-.program{
-    padding: 80px 0;
-}
-.program-group{
+.program .row:first-child{
     margin-bottom: 32px;
 }
-.program-group .program-title{
-    display: inline-block;
+.program .section-category{
     color: #009B4D;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: -0.01em;
-    margin-bottom: 8px;
 }
-.program-group .program-subtitle{
-    font-size: 34px;
-    line-height: 1.058823529411765;
-    letter-spacing: -0.03em;
-    margin-bottom: 24px;
-}
-.program-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    width: 290px;
-    height: 291px;
-    transition: all 250ms ease-in-out;
-}
-.program-card:hover{
-    background-color: #3141C5;
-    color: #FFF;
-}
-.program-card:not(:last-child){
+.program .row:nth-child(2) .col-12:not(:last-child){
     margin-bottom: 20px;
 }
-.program-card-group .program-card img{
-    width: 142px;
+.program-card img{
+    display: block;
+    width: auto;
+    margin: 0 auto;
     height: 195px;
     margin-bottom: 16px;
 }
-.program-card-group .program-card:nth-child(2) img{
-    width: 146px;
+.program-card{
+    display: block;
+    text-align: center;
+    padding: 24px 0 32px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    transition: background-color 300ms ease-in-out,
+    box-shadow 300ms ease-in-out;
 }
-.program-card-group .program-card:nth-child(3) img{
-    width: 122px;
+.program-card:hover{
+    background-color: #3141C5;
+    box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
 }
-.program-card span{
+.program-card strong{
     font-size: 18px;
-    font-weight: 700;
     line-height: 1.333333333333333;
     letter-spacing: -0.02em;
+    transition: color 500ms ease-in-out;
+}
+.program-card:hover strong{
+    color: #FFF;
 }
 
 /* >=768px (Desktop)*/
@@ -174,6 +172,19 @@ p{
         height: 56px;
         font-size: 18px;
         line-height: 1.555555555555556;
+    }
+    .section{
+        padding-bottom: 96px;
+    }
+    .section-category{
+        font-size: 22px;
+        line-height: 1.090909090909091;
+        margin-bottom: 16px;
+    }
+    .section-title{
+        font-size: 56px;
+        line-height: 1;
+        margin-bottom: 32px;
     }
     /* Landing */
     .landing-content{
@@ -207,35 +218,20 @@ p{
         width: 370px;
     }
     /* Program */
-    .program-group{
+    .program{
         text-align: center;
     }
-    .program-group .program-title{
-        font-size: 22px;
-        line-height: 1.090909090909091;
-        margin-bottom: 16px;
-    }
-    .program-group .program-subtitle{
-        font-size: 56px;
-        line-height: 1;
-        margin-bottom: 32px;
-    }
-    .program-group .program-desc{
+    .program .row:first-child{
         margin-bottom: 72px;
     }
-    .program-card-group{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        align-items: center;
+    .program-card strong{
+        font-size: 20px;
+        line-height: 1.2;
     }
-    .program-card-group .program-card img{
+    .program-card img{
         margin-bottom: 24px;
     }
-    .program-card:not(:last-child){
-        margin-bottom: auto;
-        margin-right: 30px;
-    }
+    
 }
 /* Custom Grid System - Fix container width */
 @media screen and (min-width: 1200px){
