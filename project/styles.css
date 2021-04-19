@@ -160,6 +160,28 @@ p{
 .program-card:hover strong{
     color: #FFF;
 }
+/* curriculum */
+.curriculum .row:first-child{
+    margin-bottom: 48px;
+ }
+.curriculum .section-category{
+   color: #0189D1;
+}
+.curriculum .section-desc{
+    margin-bottom: 32px;
+}
+.curriculum .curriculum-image{
+    display: none;
+}
+.curriculum .curriculum-desc{
+    font-size: 15px;
+    line-height: 1.466666666666667;
+    letter-spacing: -0.01em;
+}
+.curriculum .row:last-child .col-12:first-child{
+    margin-bottom: 40px;
+}
+
 
 /* >=768px (Desktop)*/
 @media screen and (min-width:768px){
@@ -231,7 +253,29 @@ p{
     .program-card img{
         margin-bottom: 24px;
     }
-    
+    /* curriculum */
+    .curriculum .row:first-child{
+        margin-bottom: 24px;
+     }
+    .curriculum .section-desc{
+        margin-bottom: 72px;
+    }
+    .curriculum .curriculum-image{
+        display: block;
+    }
+    .curriculum .curriculum-image img{
+        display: block;
+        width: 100%;
+        max-width: 425px;
+        height: auto;
+    }
+    .curriculum .curriculum-desc{
+        font-size: 18px;
+        line-height: 1.444444444444444; 
+    }
+    .curriculum .row:last-child .col-12:first-child{
+        margin-bottom: 0;
+    }
 }
 /* Custom Grid System - Fix container width */
 @media screen and (min-width: 1200px){
