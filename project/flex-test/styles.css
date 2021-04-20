@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: black ;
+}
+button {
+    display: block;
+    flex-grow: 1;
+}
+.input-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-group input{
+    margin-right: 8px;
+    width: 500px;
+}
+
