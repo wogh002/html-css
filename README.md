@@ -1,2 +1,2 @@
 # html-css
- kimbug lecture
+ this place is where study html and css :)
