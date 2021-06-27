@@ -52,24 +52,20 @@ button {
 	background: transparent;
 	cursor: pointer;
 }
-/* 고정폭 컬럼과 가변폭 컬럼 혼합 */
-.flex-container {
-	display: flex;
-	min-height: 100vh;
-	background-color: darkgray;
-	align-items: center;
-}
-.flex-item {
-	padding: 10px;
+.header,
+.footer{
+    padding: 10px;
 	border: 3px solid rgb(50,50,40);
 	color: white;
 	background: mediumseagreen;
 }
-.flex-item:nth-child(2){
-	align-self: stretch;
-	/* flex-basis: auto; */
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   /* 디바이스의 크기가 확 줄어들었을 때 '이 부분은 이 크기 이하로 줄어들지마!" */
 }
-
-
-
-
+.content {
+    flex: 1 auto;
+    padding: 1.5rem;
+}

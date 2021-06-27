@@ -55,9 +55,7 @@ button {
 /* 고정폭 컬럼과 가변폭 컬럼 혼합 */
 .flex-container {
 	display: flex;
-	min-height: 100vh;
 	background-color: darkgray;
-	align-items: center;
 }
 .flex-item {
 	padding: 10px;
@@ -65,8 +63,18 @@ button {
 	color: white;
 	background: mediumseagreen;
 }
+.flex-item:nth-child(1){
+	width: 150px;
+	flex-shrink: 0;	
+	/* flex-basis: auto; */
+}
 .flex-item:nth-child(2){
-	align-self: stretch;
+	width: 300px;
+	flex-shrink: 0;	
+}
+.flex-item:nth-child(3){
+	width: 200px;
+	flex-shrink: 0;	
 	/* flex-basis: auto; */
 }
 

@@ -52,24 +52,24 @@ button {
 	background: transparent;
 	cursor: pointer;
 }
-/* 고정폭 컬럼과 가변폭 컬럼 혼합 */
 .flex-container {
 	display: flex;
-	min-height: 100vh;
 	background-color: darkgray;
-	align-items: center;
 }
 .flex-item {
+	width: 150px;
 	padding: 10px;
 	border: 3px solid rgb(50,50,40);
 	color: white;
 	background: mediumseagreen;
 }
-.flex-item:nth-child(2){
-	align-self: stretch;
-	/* flex-basis: auto; */
+.flex-item:last-child{
+	margin-left: auto;
+	/* margin auto 라는 것은 남아있는 마진을 다 점유 하겠다.  */
 }
 
-
+/* .flex-item p {}
+	white-space: nowrap;
+} */
 
 
