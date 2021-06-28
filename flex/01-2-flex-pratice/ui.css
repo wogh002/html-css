@@ -1,0 +1,83 @@
+.menu {
+    display: flex;
+}
+.menu-item{
+    background-color: gold;
+    width: 25%;
+    min-width: 75px;
+    transition: 0.5s;
+}
+.menu-item:hover{
+    width: 35%;
+    background-color: crimson;
+}
+.menu-link{
+    display: block;
+    white-space: nowrap;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #555;
+    text-decoration: none;
+    text-align: center;
+}
+.menu-link:hover{
+    color: white;
+}
+.search-form{
+    display: flex;
+    height: 4rem;
+    /* align-items: stretch; */
+}
+.search-form input[type='search']{
+    margin-right: 1rem;
+    border: none;
+    border-radius: 0.3em;
+    font-size: 1.6rem;
+    flex:1;
+}
+.search-form input[type='submit']{
+    width: 4em;
+    border: none;
+    border-radius: 0.3em;
+    font-size: 1.6rem;
+    background-color: gold;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+}
+/* bullet list */
+.info-list-item{
+    display: flex;
+    margin:1rem 0; 
+}
+.info-list-item::before{
+    content: '🍎';
+    margin-right: 0.5rem;
+}
+
+/* user-photo list*/
+.user-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.user-photo{
+    flex-shrink: 0;
+    margin-right: 0.5rem;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    background-color: gold;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150%;
+}
+.user-name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
