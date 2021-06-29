@@ -8,67 +8,207 @@
 	<title>CSS Flex</title>
 	<link rel="stylesheet" href="default.css">
 	<link rel="stylesheet" href="ui.css">
+	<link rel="stylesheet" href="ui-page.css">
 </head>
 
 <body>
-	<ul class="card-list">
-		<li class="card-item">
-			<figure class="card-image" style="background-image: url(./images/ilbuni.png);">
-				<!-- 사용자가 이미지를 업로드 하는 사진이라면 즉, db에서 가져오는 이미지일 경우 백그라운드 인라인 처리하자. -->
-				<!-- 콘텐츠의 기본 구조상 이미지가 꼭 필요한지 아닌지를 판단해보시면 좋을 것 같아요. -->
-				<img src="./images/ilbuni.png" />
-			</figure>
-			<div class="card-desc">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, perspiciatis.
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, perspiciatis.
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, perspiciatis.
+	<!-- header -->
+	<div class="page">
+		<header class="header">
+			<h1 class="website-title">1분코딩</h1>
+			<form class="search-form">
+				<input type="search">
+				<input type="submit" value="찾기">
+			</form>
+			<!-- <div id="modal-switch">✌️</div> -->
+		</header>
+		<!-- menu -->
+		<ul class="menu">
+			<li class="menu-item">
+				<a href="#" class="menu-link">
+					Home
+				</a>
+			</li>
+			<li class="menu-item">
+				<a href="#" class="menu-link">
+					About
+				</a>
+			</li>
+			<li class="menu-item">
+				<a href="#" class="menu-link">
+					Product
+				</a>
+			</li>
+			<li class="menu-item">
+				<a href="#" class="menu-link">
+					Contact
+				</a>
+			</li>
+		</ul>
+		<!-- main (card-list)-->
+		<main class="primary">
+			<div class="card-list-con">
+				<ul class="card-list">
+					<li class="card-item">
+						<figure class="card-image" style="background-image: url(./images/ilbuni.png);">
+							<!-- 사용자가 이미지를 업로드 하는 사진이라면 즉, db에서 가져오는 이미지일 경우 백그라운드 인라인 처리하자. -->
+							<!-- 콘텐츠의 기본 구조상 이미지가 꼭 필요한지 아닌지를 판단해보시면 좋을 것 같아요. -->
+							<img src="./images/ilbuni.png" />
+						</figure>
+						<div class="card-desc">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, perspiciatis.
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, perspiciatis.
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, perspiciatis.
+						</div>
+					</li>
+					<li class="card-item">
+						<figure class="card-image" style="background-image: url(./images/ilbuni.png);">
+							<img src="./images/ilbuni.png" />
+						</figure>
+						<div class="card-desc">
+							Lorem ipsum dolor
+						</div>
+					</li>
+					<li class="card-item">
+						<figure class="card-image" style="background-image: url(./images/ilbuni.png);">
+							<img src="./images/ilbuni.png" />
+						</figure>
+						<div class="card-desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, doloribus? Asperiores,
+							placeat.
+							Magnam quisquam similique, eaque dolores voluptas reprehenderit ab eos officiis, doloribus
+							labore id
+							dolor et. Quibusdam magni minus dolorum, fugiat eos repudiandae voluptas reprehenderit.
+							Dolor
+							harum
+							esse, natus consequatur iste nemo totam, atque accusantium possimus impedit deserunt? Porro!
+						</div>
+					</li>
+					<li class="card-item">
+						<figure class="card-image" style="background-image: url(./images/ilbuni.png);">
+							<img src="./images/ilbuni.png" />
+						</figure>
+						<div class="card-desc">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, perspiciatis.
+						</div>
+					</li>
+					<li class="card-item">
+						<figure class="card-image" style="background-image: url(./images/ilbuni.png);">
+							<img src="./images/ilbuni.png" />
+						</figure>
+						<div class="card-desc">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, perspiciatis.
+						</div>
+					</li>
+					<li class="card-item">
+						<figure class="card-image" style="background-image: url(./images/ilbuni.png);">
+							<img src="./images/ilbuni.png" />
+						</figure>
+						<div class="card-desc">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, perspiciatis.
+						</div>
+					</li>
+				</ul>
 			</div>
-		</li>
-		<li class="card-item">
-			<figure class="card-image" style="background-image: url(./images/ilbuni.png);">
-				<img src="./images/ilbuni.png" />
-			</figure>
-			<div class="card-desc">
-				Lorem ipsum dolor
-			</div>
-		</li>
-		<li class="card-item">
-			<figure class="card-image" style="background-image: url(./images/ilbuni.png);">
-				<img src="./images/ilbuni.png" />
-			</figure>
-			<div class="card-desc">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, doloribus? Asperiores, placeat.
-				Magnam quisquam similique, eaque dolores voluptas reprehenderit ab eos officiis, doloribus labore id
-				dolor et. Quibusdam magni minus dolorum, fugiat eos repudiandae voluptas reprehenderit. Dolor harum
-				esse, natus consequatur iste nemo totam, atque accusantium possimus impedit deserunt? Porro!
-			</div>
-		</li>
-		<li class="card-item">
-			<figure class="card-image" style="background-image: url(./images/ilbuni.png);">
-				<img src="./images/ilbuni.png" />
-			</figure>
-			<div class="card-desc">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, perspiciatis.
-			</div>
-		</li>
-		<li class="card-item">
-			<figure class="card-image" style="background-image: url(./images/ilbuni.png);">
-				<img src="./images/ilbuni.png" />
-			</figure>
-			<div class="card-desc">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, perspiciatis.
-			</div>
-		</li>
-		<li class="card-item">
-			<figure class="card-image" style="background-image: url(./images/ilbuni.png);">
-				<img src="./images/ilbuni.png" />
-			</figure>
-			<div class="card-desc">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, perspiciatis.
-			</div>
-		</li>
+		</main>
+		<!-- secondary-a -->
+		<aside class="secondary secondary-a">
+			<ul class="info-list">
+				<li class="info-list-item">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, molestias? Esse earum distinctio,
+					quas
+					commodi obcaecati blanditiis ipsam quia eius laboriosam ipsum provident nostrum.
+				</li>
+				<li class="info-list-item">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sunt alias quo pariatur
+					ipsum.
+				</li>
+				<li class="info-list-item">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, molestias? Esse earum distinctio,
+					quas
+					commodi obcaecati blanditiis ipsam quia eius laboriosam ipsum provident nostrum.
+				</li>
+			</ul>
 
-	</ul>
+			<ul class="user-list friend-list">
+				<li class="user-item friend-item">
+					<!-- 사람프로필을 업로드하는 이미지 라고 생각해보자 -->
+					<!-- 어떤 사람건 세로로 긴 이미지를 업로드 할 수 있고 어떤사람은 가로가 긴 이미지를 업로드 할 가능성이있다. -->
+					<!-- 이럴 경우 이미지 태그를 사용하면 조금 까다롭다. -->
+					<figure class="user-photo" style="background-image: url(./images/ilbuni.png);">
+					</figure>
+					<p class="user-name">일분이일분이일분이일분이일분이일분이일분이일분이</p>
+				</li>
+				<li class="user-item friend-item">
+					<figure class="user-photo" style="background-image: url(./images/ilbuni.png);">
+					</figure>
+					<p class="user-name">일분이일분이일분이일분이일분이일분이일분이일분이</p>
+				</li>
+				<li class="user-item friend-item">
+					<figure class="user-photo" style="background-image: url(./images/ilbuni.png);">
+					</figure>
+					<p class="user-name">일분이일분이일분이일분이일분이일분이일분이일분이</p>
+				</li>
+			</ul>
+		</aside>
+		<!-- secondary-b -->
+		<aside class="secondary secondary-b">
+			<ul class="user-list-message-list">
+				<li class="user-item message-item">
+					<!-- 사람프로필을 업로드하는 이미지 라고 생각해보자 -->
+					<!-- 어떤 사람건 세로로 긴 이미지를 업로드 할 수 있고 어떤사람은 가로가 긴 이미지를 업로드 할 가능성이있다. -->
+					<!-- 이럴 경우 이미지 태그를 사용하면 조금 까다롭다. -->
+					<figure class="user-photo" style="background-image: url(./images/ilbuni.png);">
+					</figure>
+					<p class="user-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint maxime, error
+						labore dolorem at optio reprehenderit, voluptatem ab dolores eveniet nihil? Vitae voluptatibus
+						libero ad
+						pariatur nam beatae cum quibusdam vel reiciendis, at iusto sunt facilis. Iure inventore
+						reprehenderit
+						facilis!
+					</p>
+				</li>
+				<li class="user-item message-item">
+					<figure class="user-photo" style="background-image: url(./images/ilbuni.png);">
+					</figure>
+					<p class="user-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint maxime, error
+						labore dolorem at optio reprehenderit, voluptatem ab dolores eveniet nihil? Vitae voluptatibus
+						libero ad
+						pariatur nam beatae cum quibusdam vel reiciendis, at iusto sunt facilis. Iure inventore
+						reprehenderit
+						facilis!
+					</p>
+				</li>
+				<li class="user-item message-item">
+					<figure class="user-photo" style="background-image: url(./images/ilbuni.png);">
+					</figure>
+					<p class="user-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint maxime, error
+						labore dolorem at optio reprehenderit, voluptatem ab dolores eveniet nihil? Vitae voluptatibus
+						libero ad
+						pariatur nam beatae cum quibusdam vel reiciendis, at iusto sunt facilis. Iure inventore
+						reprehenderit
+						facilis!
+					</p>
+				</li>
+			</ul>
+		</aside>
+		<!-- footer -->
+		<footer class="footer">
+			aaaaaaaaaaaaaaaaaaaaaaaa
+		</footer>
+	</div>
+	<section class="modal">
+		<div class="dialog">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo possimus eos suscipit earum voluptatum sit
+			aperiam esse numquam dolor vel quam modi facilis non doloribus iusto, debitis placeat necessitatibus
+			perspiciatis accusantium distinctio! Tempora incidunt distinctio et explicabo, quaerat quia consequuntur
+			accusamus eligendi nesciunt, ullam eaque ab autem ipsa laborum, qui corporis. Doloribus doloremque corrupti,
+			fugiat et iure explicabo obcaecati ducimus dolores sed dolor distinctio cum consequatur optio cumque
+			aperiam! Perspiciatis, nisi eius. Minima optio quas provident nobis sequi dignissimos modi eveniet!
+			Laudantium eveniet necessitatibus voluptatum ipsa dicta veniam culpa, repudiandae adipisci libero, numquam,
+			hic minima. Quasi natus a rerum. Exercitationem!
+		</div>
+	</section>
 </body>
 
 </html>

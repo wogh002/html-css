@@ -1,0 +1,43 @@
+/* card list */
+.card-item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.card-image{
+     background-repeat: no-repeat;
+     background-color: lightgray;
+     background-position: center;
+     /* 가로가 긴 이미지, 세로가 긴이미지를 사용자가 업로드할 가능성 있다. 
+     그럴 경우 백그라운드로 처리하자. */
+     background-size: cover;
+     height: 0;
+     padding-bottom: 60%;
+}
+.card-image img{
+     display: none;
+}
+.card-desc{
+    padding: 1.5rem;
+    flex: 1 1 auto;
+    background-color: white;
+}
+.card-list-con{
+    overflow-x: hidden;
+}
+@media (min-width:600px) {
+    .card-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+    }
+    .card-item{
+        width: 50%;
+        padding: 0 1rem;
+    }
+}
+@media (min-width:1200px){
+    .card-item{
+        width: 33.33333%;
+    }
+}
